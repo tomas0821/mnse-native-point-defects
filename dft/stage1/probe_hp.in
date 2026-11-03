@@ -1,0 +1,7 @@
+&INPUTHP
+  prefix       = 'probe_hp'
+  outdir       = './tmp_hp'
+  nq1 = 1, nq2 = 1, nq3 = 1
+  conv_thr_chi = 1.0d-4
+  iverbosity   = 2
+/

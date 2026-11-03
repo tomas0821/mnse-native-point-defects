@@ -1,0 +1,46 @@
+&CONTROL
+    calculation = 'scf'
+    prefix      = 'null_rs'
+    pseudo_dir  = '/home/tomas.rojas_s/pseudo'
+    outdir      = './tmp_null_rs'
+    verbosity   = 'high'
+    disk_io     = 'medium'
+/
+&SYSTEM
+    ibrav       = 0
+    nat         = 4
+    ntyp        = 3
+    ecutwfc     = 120.0
+    ecutrho     = 960.0
+    occupations = 'smearing'
+    smearing    = 'gaussian'
+    degauss     = 0.01
+    nbnd        = 40
+    nspin       = 2
+    starting_magnetization(1) = +0.5
+    starting_magnetization(2) = -0.5
+    starting_magnetization(3) = +0.0
+/
+&ELECTRONS
+    conv_thr        = 1.0d-8
+    mixing_beta     = 0.3
+    electron_maxstep = 200
+/
+ATOMIC_SPECIES
+  Mn1 54.938044 Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+  Mn2 54.938044 Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+  Se  78.971    Se.pbe-dn-kjpaw_psl.1.0.0.UPF
+HUBBARD (ortho-atomic)
+U Mn1-3d 3.7574
+U Mn2-3d 3.7574
+CELL_PARAMETERS angstrom
+  -2.768886205   2.768886205   0.000000000
+  -0.000000000  -2.768886205   2.768886205
+   2.758257176   2.758257176   5.527143381
+ATOMIC_POSITIONS angstrom
+  Mn1   0.0000000000   0.0000000000   0.0000000000
+  Se   -0.0026556186  -0.0026556186   2.7662305861
+  Mn2  -0.0053145142   2.7635716904   2.7635716904
+  Se   -0.0079734099   2.7609127948   5.5297989994
+K_POINTS automatic
+  8 8 8 0 0 0

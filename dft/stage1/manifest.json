@@ -1,0 +1,46 @@
+{
+  "batches": {
+    "A_convergence": [
+      "convA_rs_ecut40",
+      "convA_rs_ecut50",
+      "convA_rs_ecut60",
+      "convA_rs_ecut70",
+      "convA_rs_ecut80",
+      "convA_rs_ecut90",
+      "convA_wz_ecut40",
+      "convA_wz_ecut50",
+      "convA_wz_ecut60",
+      "convA_wz_ecut70",
+      "convA_wz_ecut80",
+      "convA_wz_ecut90",
+      "convA_rs_k4",
+      "convA_rs_k6",
+      "convA_rs_k8",
+      "convA_rs_k10",
+      "convA_wz_k6",
+      "convA_wz_k8",
+      "convA_wz_k10",
+      "convA_wz_k12"
+    ],
+    "B_ordering": [
+      "ordB_rs_FM",
+      "ordB_rs_AFMI",
+      "ordB_rs_AFMII",
+      "ordB_wz_FM",
+      "ordB_wz_AFM"
+    ],
+    "C_relax": [
+      "relC_wz_AFM",
+      "relC_rs_AFMI_quick",
+      "relC_rs_AFMII"
+    ]
+  },
+  "U_provisional": 5.1,
+  "a_rocksalt": 5.4616,
+  "a_wurtzite": 4.19,
+  "c_wurtzite": 6.68,
+  "pseudo": {
+    "Mn": "Mn.pbe-spn-kjpaw_psl.0.3.1.UPF",
+    "Se": "Se.pbe-dn-kjpaw_psl.1.0.0.UPF"
+  }
+}

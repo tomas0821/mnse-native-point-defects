@@ -1,0 +1,59 @@
+&CONTROL
+    calculation = 'vc-relax'
+    prefix      = 'b_rs'
+    pseudo_dir  = '/home/tomas.rojas_s/pseudo'
+    outdir      = './tmp_b_rs'
+    tprnfor     = .true.
+    tstress     = .true.
+    forc_conv_thr = 1.0d-4
+    etot_conv_thr = 1.0d-5
+    nstep       = 200
+/
+&SYSTEM
+    ibrav       = 0
+    nat         = 8
+    ntyp        = 3
+    ecutwfc     = 120.0
+    ecutrho     = 960.0
+    occupations = 'smearing'
+    smearing    = 'gaussian'
+    degauss     = 0.01
+    nspin       = 2
+    starting_magnetization(1) = +0.5
+    starting_magnetization(2) = -0.5
+    starting_magnetization(3) = +0.0
+/
+&ELECTRONS
+    conv_thr        = 1.0d-8
+    mixing_beta     = 0.3
+    electron_maxstep = 200
+/
+&IONS
+    ion_dynamics = 'bfgs'
+/
+&CELL
+    cell_dynamics = 'bfgs'
+    press_conv_thr = 0.5
+/
+ATOMIC_SPECIES
+  Mn1 54.938044 Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+  Mn2 54.938044 Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+  Se 78.971 Se.pbe-dn-kjpaw_psl.1.0.0.UPF
+HUBBARD (ortho-atomic)
+U Mn1-3d 3.7574
+U Mn2-3d 3.7574
+CELL_PARAMETERS angstrom
+  5.4616000000 0.0000000000 0.0000000000
+  0.0000000000 5.4616000000 0.0000000000
+  0.0000000000 0.0000000000 5.4616000000
+ATOMIC_POSITIONS angstrom
+  Mn1 0.0000000000 0.0000000000 0.0000000000
+  Mn2 0.0000000000 2.7308000000 2.7308000000
+  Mn2 2.7308000000 0.0000000000 2.7308000000
+  Mn1 2.7308000000 2.7308000000 0.0000000000
+  Se 0.0000000000 0.0000000000 2.7308000000
+  Se 0.0000000000 2.7308000000 0.0000000000
+  Se 2.7308000000 0.0000000000 0.0000000000
+  Se 2.7308000000 2.7308000000 2.7308000000
+K_POINTS automatic
+  6 6 6 0 0 0

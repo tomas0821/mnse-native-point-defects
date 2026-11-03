@@ -1,0 +1,1118 @@
+
+     Program PWSCF v.7.5 starts on  7Aug2026 at 16:10:11 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      64 processor cores
+     Number of MPI processes:                64
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     218798 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading input from uB_wz_L_U6p0_J0p9.in
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file Mn.pbe-spn-kjpaw_psl.0.3.1.UPF: wavefunction(s)  3P 3D renormalized
+     file Mn.pbe-spn-kjpaw_psl.0.3.1.UPF: wavefunction(s)  3P 3D renormalized
+     file Se.pbe-dn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 4P 3D renormalized
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+ 
+     K-points division:     npool     =       4
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         259     129     36                21515     7598    1100
+     Max         261     131     37                21517     7602    1103
+     Sum        4153    2077    583               344249   121601   17621
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       7.9180  a.u.
+     unit-cell volume          =     685.3805 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            3
+     number of electrons       =        62.00
+     number of Kohn-Sham states=           37
+     kinetic-energy cutoff     =     120.0000  Ry
+     charge density cutoff     =     960.0000  Ry
+     scf convergence threshold =      1.0E-08
+     mixing beta               =       0.3000
+     number of iterations used =            8  plain     mixing
+     energy convergence thresh.=      1.0E-05
+     force convergence thresh. =      1.0E-04
+     press convergence thresh. =      5.0E-01
+     Exchange-correlation= SLA  PW   PBX  PBC
+                           (   1   4   3   4   0   0   0)
+     nstep                     =          200
+
+     Hubbard projectors: ortho-atomic
+     Hubbard parameters of DFT+U (Liechtenstein formulation) in eV:
+     U(Mn1-3d) =  6.0000
+     J(Mn1-3d) =  0.9000
+     B(Mn1-3d) =  0.1033
+     U(Mn2-3d) =  6.0000
+     J(Mn2-3d) =  0.9000
+     B(Mn2-3d) =  0.1033
+
+     Internal variables: lda_plus_u = T, lda_plus_u_kind = 1
+
+     Internal variables: orbital_resolved = F, hub_pot_fix = F, apply_U =  F
+
+     celldm(1)=   7.917952  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.594272 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.627246 )  
+
+
+     PseudoPot. # 1 for Mn read from file:
+     /home/tomas.rojas_s/pseudo/Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+     MD5 check sum: ba19e6d7ccbc12830efad05ba8577d9c
+     Pseudo is Projector augmented-wave + core cor, Zval = 15.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.2.2
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1187 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for Mn read from file:
+     /home/tomas.rojas_s/pseudo/Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+     MD5 check sum: ba19e6d7ccbc12830efad05ba8577d9c
+     Pseudo is Projector augmented-wave + core cor, Zval = 15.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.2.2
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1187 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 3 for Se read from file:
+     /home/tomas.rojas_s/pseudo/Se.pbe-dn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: ac240dd2bae32a30e0bf3a38df9c8785
+     Pseudo is Projector augmented-wave + core cor, Zval = 16.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1211 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+     Mn1              15.00    54.93804     Mn( 1.00)
+     Mn2              15.00    54.93804     Mn( 1.00)
+     Se               16.00    78.97100     Se( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+     Mn1             0.500
+     Mn2            -0.500
+     Se              0.000
+
+      6 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        Mn1    tau(   1) = (   0.0000000   0.5773503   0.0000000  )
+         2        Mn2    tau(   2) = (   0.5000000   0.2886751   0.7971360  )
+         3        Se     tau(   3) = (   0.0000000   0.5773503   0.5978520  )
+         4        Se     tau(   4) = (   0.5000000   0.2886751   1.3949881  )
+
+     number of k points=    72  Gaussian smearing, width (Ry)=  0.0100
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0016667
+        k(    2) = (   0.0000000   0.0000000   0.1045409), wk =   0.0033333
+        k(    3) = (   0.0000000   0.0000000   0.2090818), wk =   0.0033333
+        k(    4) = (   0.0000000   0.0000000  -0.3136228), wk =   0.0016667
+        k(    5) = (   0.0000000   0.1154701   0.0000000), wk =   0.0100000
+        k(    6) = (   0.0000000   0.1154701   0.1045409), wk =   0.0100000
+        k(    7) = (   0.0000000   0.1154701   0.2090818), wk =   0.0100000
+        k(    8) = (   0.0000000   0.1154701  -0.3136228), wk =   0.0100000
+        k(    9) = (   0.0000000   0.2309401   0.0000000), wk =   0.0100000
+        k(   10) = (   0.0000000   0.2309401   0.1045409), wk =   0.0100000
+        k(   11) = (   0.0000000   0.2309401   0.2090818), wk =   0.0100000
+        k(   12) = (   0.0000000   0.2309401  -0.3136228), wk =   0.0100000
+        k(   13) = (   0.0000000   0.3464102   0.0000000), wk =   0.0100000
+        k(   14) = (   0.0000000   0.3464102   0.1045409), wk =   0.0100000
+        k(   15) = (   0.0000000   0.3464102   0.2090818), wk =   0.0100000
+        k(   16) = (   0.0000000   0.3464102  -0.3136228), wk =   0.0100000
+        k(   17) = (   0.0000000   0.4618802   0.0000000), wk =   0.0100000
+        k(   18) = (   0.0000000   0.4618802   0.1045409), wk =   0.0100000
+        k(   19) = (   0.0000000   0.4618802   0.2090818), wk =   0.0100000
+        k(   20) = (   0.0000000   0.4618802  -0.3136228), wk =   0.0100000
+        k(   21) = (   0.0000000  -0.5773503   0.0000000), wk =   0.0050000
+        k(   22) = (   0.0000000  -0.5773503   0.1045409), wk =   0.0100000
+        k(   23) = (   0.0000000  -0.5773503   0.2090818), wk =   0.0100000
+        k(   24) = (   0.0000000  -0.5773503  -0.3136228), wk =   0.0050000
+        k(   25) = (   0.1000000   0.1732051   0.0000000), wk =   0.0100000
+        k(   26) = (   0.1000000   0.1732051   0.1045409), wk =   0.0200000
+        k(   27) = (   0.1000000   0.1732051   0.2090818), wk =   0.0200000
+        k(   28) = (   0.1000000   0.1732051  -0.3136228), wk =   0.0100000
+        k(   29) = (   0.1000000   0.2886751   0.0000000), wk =   0.0200000
+        k(   30) = (   0.1000000   0.2886751   0.1045409), wk =   0.0200000
+        k(   31) = (   0.1000000   0.2886751   0.2090818), wk =   0.0200000
+        k(   32) = (   0.1000000   0.2886751  -0.3136228), wk =   0.0200000
+        k(   33) = (   0.1000000   0.4041452   0.0000000), wk =   0.0200000
+        k(   34) = (   0.1000000   0.4041452   0.1045409), wk =   0.0200000
+        k(   35) = (   0.1000000   0.4041452   0.2090818), wk =   0.0200000
+        k(   36) = (   0.1000000   0.4041452  -0.3136228), wk =   0.0200000
+        k(   37) = (   0.1000000   0.5196152   0.0000000), wk =   0.0200000
+        k(   38) = (   0.1000000   0.5196152   0.1045409), wk =   0.0200000
+        k(   39) = (   0.1000000   0.5196152   0.2090818), wk =   0.0200000
+        k(   40) = (   0.1000000   0.5196152  -0.3136228), wk =   0.0200000
+        k(   41) = (   0.2000000   0.3464102   0.0000000), wk =   0.0100000
+        k(   42) = (   0.2000000   0.3464102   0.1045409), wk =   0.0200000
+        k(   43) = (   0.2000000   0.3464102   0.2090818), wk =   0.0200000
+        k(   44) = (   0.2000000   0.3464102  -0.3136228), wk =   0.0100000
+        k(   45) = (   0.2000000   0.4618802   0.0000000), wk =   0.0200000
+        k(   46) = (   0.2000000   0.4618802   0.1045409), wk =   0.0200000
+        k(   47) = (   0.2000000   0.4618802   0.2090818), wk =   0.0200000
+        k(   48) = (   0.2000000   0.4618802  -0.3136228), wk =   0.0200000
+        k(   49) = (   0.2000000   0.5773503   0.0000000), wk =   0.0100000
+        k(   50) = (   0.2000000   0.5773503   0.1045409), wk =   0.0200000
+        k(   51) = (   0.2000000   0.5773503   0.2090818), wk =   0.0200000
+        k(   52) = (   0.2000000   0.5773503  -0.3136228), wk =   0.0100000
+        k(   53) = (   0.3000000   0.5196152   0.0000000), wk =   0.0100000
+        k(   54) = (   0.3000000   0.5196152   0.1045409), wk =   0.0200000
+        k(   55) = (   0.3000000   0.5196152   0.2090818), wk =   0.0200000
+        k(   56) = (   0.3000000   0.5196152  -0.3136228), wk =   0.0100000
+        k(   57) = (   0.0000000  -0.1154701   0.1045409), wk =   0.0100000
+        k(   58) = (   0.0000000  -0.1154701   0.2090818), wk =   0.0100000
+        k(   59) = (   0.0000000  -0.2309401   0.1045409), wk =   0.0100000
+        k(   60) = (   0.0000000  -0.2309401   0.2090818), wk =   0.0100000
+        k(   61) = (   0.0000000  -0.3464102   0.1045409), wk =   0.0100000
+        k(   62) = (   0.0000000  -0.3464102   0.2090818), wk =   0.0100000
+        k(   63) = (   0.0000000  -0.4618802   0.1045409), wk =   0.0100000
+        k(   64) = (   0.0000000  -0.4618802   0.2090818), wk =   0.0100000
+        k(   65) = (  -0.1000000  -0.2886751   0.1045409), wk =   0.0200000
+        k(   66) = (  -0.1000000  -0.2886751   0.2090818), wk =   0.0200000
+        k(   67) = (  -0.1000000  -0.4041452   0.1045409), wk =   0.0200000
+        k(   68) = (  -0.1000000  -0.4041452   0.2090818), wk =   0.0200000
+        k(   69) = (  -0.1000000  -0.5196152   0.1045409), wk =   0.0200000
+        k(   70) = (  -0.1000000  -0.5196152   0.2090818), wk =   0.0200000
+        k(   71) = (  -0.2000000  -0.4618802   0.1045409), wk =   0.0200000
+        k(   72) = (  -0.2000000  -0.4618802   0.2090818), wk =   0.0200000
+
+     Dense  grid:   344249 G-vectors     FFT dimensions: (  80,  80, 125)
+
+     Smooth grid:   121601 G-vectors     FFT dimensions: (  60,  60,  90)
+
+     Estimated max dynamical RAM per process >      80.21 MB
+
+     Estimated total dynamical RAM >       4.52 GB
+     Generating pointlists ...
+     new r_m :   0.2466 (alat units)  1.9527 (a.u.) for type    1
+     new r_m :   0.2466 (alat units)  1.9527 (a.u.) for type    2
+     new r_m :   0.2466 (alat units)  1.9527 (a.u.) for type    3
+
+     Initial potential from superposition of free atoms
+
+     starting charge      61.9989, renormalised to      62.0000
+
+     STARTING HUBBARD OCCUPATIONS:
+
+     =================== HUBBARD OCCUPATIONS ===================
+     ------------------------ ATOM    1 ------------------------
+     Tr[ns(  1)] (up, down, total) =   5.00000  0.00000  5.00000
+     Atomic magnetic moment for atom   1 =   5.00000
+     SPIN  1
+     eigenvalues:
+       1.000  1.000  1.000  1.000  1.000
+     eigenvectors (columns):
+       1.000  0.000  0.000  0.000  0.000
+       0.000  1.000  0.000  0.000  0.000
+       0.000  0.000  1.000  0.000  0.000
+       0.000  0.000  0.000  1.000  0.000
+       0.000  0.000  0.000  0.000  1.000
+     occupation matrix ns (before diag.):
+       1.000  0.000  0.000  0.000  0.000
+       0.000  1.000  0.000  0.000  0.000
+       0.000  0.000  1.000  0.000  0.000
+       0.000  0.000  0.000  1.000  0.000
+       0.000  0.000  0.000  0.000  1.000
+     SPIN  2
+     eigenvalues:
+       0.000  0.000  0.000  0.000  0.000
+     eigenvectors (columns):
+       1.000  0.000  0.000  0.000  0.000
+       0.000  1.000  0.000  0.000  0.000
+       0.000  0.000  1.000  0.000  0.000
+       0.000  0.000  0.000  1.000  0.000
+       0.000  0.000  0.000  0.000  1.000
+     occupation matrix ns (before diag.):
+       0.000  0.000  0.000  0.000  0.000
+       0.000  0.000  0.000  0.000  0.000
+       0.000  0.000  0.000  0.000  0.000
+       0.000  0.000  0.000  0.000  0.000
+       0.000  0.000  0.000  0.000  0.000
+     ------------------------ ATOM    2 ------------------------
+     Tr[ns(  2)] (up, down, total) =   0.00000  5.00000  5.00000
+     Atomic magnetic moment for atom   2 =  -5.00000
+     SPIN  1
+     eigenvalues:
+       0.000  0.000  0.000  0.000  0.000
+     eigenvectors (columns):
+       1.000  0.000  0.000  0.000  0.000
+       0.000  1.000  0.000  0.000  0.000
+       0.000  0.000  1.000  0.000  0.000
+       0.000  0.000  0.000  1.000  0.000
+       0.000  0.000  0.000  0.000  1.000
+     occupation matrix ns (before diag.):
+       0.000  0.000  0.000  0.000  0.000
+       0.000  0.000  0.000  0.000  0.000
+       0.000  0.000  0.000  0.000  0.000
+       0.000  0.000  0.000  0.000  0.000
+       0.000  0.000  0.000  0.000  0.000
+     SPIN  2
+     eigenvalues:
+       1.000  1.000  1.000  1.000  1.000
+     eigenvectors (columns):
+       1.000  0.000  0.000  0.000  0.000
+       0.000  1.000  0.000  0.000  0.000
+       0.000  0.000  1.000  0.000  0.000
+       0.000  0.000  0.000  1.000  0.000
+       0.000  0.000  0.000  0.000  1.000
+     occupation matrix ns (before diag.):
+       1.000  0.000  0.000  0.000  0.000
+       0.000  1.000  0.000  0.000  0.000
+       0.000  0.000  1.000  0.000  0.000
+       0.000  0.000  0.000  1.000  0.000
+       0.000  0.000  0.000  0.000  1.000
+
+     Number of occupied Hubbard levels =   10.0000
+
+     Atomic wfc used for Hubbard projectors are orthogonalized
+
+     Starting wfcs are   38 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is        1.7 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  4.6
+
+     =================== HUBBARD OCCUPATIONS ===================
+     ------------------------ ATOM    1 ------------------------
+     Tr[ns(  1)] (up, down, total) =   4.98922  0.16129  5.15051
+     Atomic magnetic moment for atom   1 =   4.82793
+     SPIN  1
+     eigenvalues:
+       0.997  0.998  0.998  0.998  0.998
+     eigenvectors (columns):
+       1.000 -0.000 -0.000  0.000 -0.000
+       0.000 -0.568 -0.194  0.425  0.678
+      -0.000  0.194 -0.568 -0.678  0.425
+       0.000 -0.258  0.757 -0.509  0.318
+       0.000  0.757  0.258  0.318  0.509
+     occupation matrix ns (before diag.):
+       0.997 -0.000 -0.000 -0.000 -0.000
+      -0.000  0.998 -0.000  0.000  0.000
+      -0.000 -0.000  0.998  0.000 -0.000
+      -0.000  0.000  0.000  0.998  0.000
+      -0.000  0.000 -0.000  0.000  0.998
+     SPIN  2
+     eigenvalues:
+       0.015  0.015  0.042  0.042  0.047
+     eigenvectors (columns):
+      -0.000  0.000 -0.000 -0.000  1.000
+       0.317  0.742 -0.568  0.162  0.000
+      -0.742  0.317  0.162  0.568  0.000
+      -0.544  0.232 -0.222 -0.776 -0.000
+       0.232  0.544  0.776 -0.222 -0.000
+     occupation matrix ns (before diag.):
+       0.047 -0.000 -0.000 -0.000 -0.000
+      -0.000  0.025 -0.000  0.000 -0.013
+      -0.000 -0.000  0.025 -0.013 -0.000
+      -0.000  0.000 -0.013  0.033  0.000
+      -0.000 -0.013 -0.000  0.000  0.033
+     ------------------------ ATOM    2 ------------------------
+     Tr[ns(  2)] (up, down, total) =   0.16084  4.98925  5.15010
+     Atomic magnetic moment for atom   2 =  -4.82841
+     SPIN  1
+     eigenvalues:
+       0.015  0.015  0.042  0.042  0.047
+     eigenvectors (columns):
+      -0.000 -0.000  0.000  0.000 -1.000
+       0.497  0.634 -0.483  0.343  0.000
+      -0.634  0.497  0.343  0.483  0.000
+       0.466 -0.365  0.467  0.657  0.000
+      -0.365 -0.466 -0.657  0.467  0.000
+     occupation matrix ns (before diag.):
+       0.047 -0.000 -0.000 -0.000 -0.000
+      -0.000  0.025 -0.000  0.000  0.013
+      -0.000 -0.000  0.025  0.013 -0.000
+      -0.000  0.000  0.013  0.032  0.000
+      -0.000  0.013 -0.000  0.000  0.032
+     SPIN  2
+     eigenvalues:
+       0.997  0.998  0.998  0.998  0.998
+     eigenvectors (columns):
+      -1.000 -0.000  0.000  0.000 -0.000
+      -0.000 -0.481 -0.368  0.789 -0.105
+      -0.000  0.368 -0.481 -0.105 -0.789
+      -0.000  0.484 -0.632  0.079  0.600
+      -0.000 -0.632 -0.484 -0.600  0.079
+     occupation matrix ns (before diag.):
+       0.997 -0.000 -0.000 -0.000 -0.000
+      -0.000  0.998 -0.000  0.000 -0.000
+      -0.000 -0.000  0.998 -0.000 -0.000
+      -0.000  0.000 -0.000  0.998  0.000
+      -0.000 -0.000 -0.000  0.000  0.998
+
+     Number of occupied Hubbard levels =   10.3006
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  8.35E-04,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        6.0 secs
+
+     total energy              =   -1376.48160928 Ry
+     estimated scf accuracy    <       0.51263414 Ry
+
+     total magnetization       =     0.00 Bohr mag/cell
+     absolute magnetization    =    10.13 Bohr mag/cell
+
+     iteration #  2     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  8.27E-04,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        8.0 secs
+
+     total energy              =   -1376.62537603 Ry
+     estimated scf accuracy    <       0.22868859 Ry
+
+     total magnetization       =    -0.00 Bohr mag/cell
+     absolute magnetization    =    10.08 Bohr mag/cell
+
+     iteration #  3     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  3.69E-04,  avg # of iterations =  2.2
+
+     total cpu time spent up to now is       10.2 secs
+
+     total energy              =   -1376.65918989 Ry
+     estimated scf accuracy    <       0.03179942 Ry
+
+     total magnetization       =     0.00 Bohr mag/cell
+     absolute magnetization    =     9.97 Bohr mag/cell
+
+     iteration #  4     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  5.13E-05,  avg # of iterations =  6.6
+
+     total cpu time spent up to now is       13.2 secs
+
+     total energy              =   -1376.66373682 Ry
+     estimated scf accuracy    <       0.00262796 Ry
+
+     total magnetization       =     0.00 Bohr mag/cell
+     absolute magnetization    =     9.88 Bohr mag/cell
+
+     iteration #  5     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  4.24E-06,  avg # of iterations =  4.6
+
+     total cpu time spent up to now is       15.9 secs
+
+     total energy              =   -1376.66409758 Ry
+     estimated scf accuracy    <       0.00027358 Ry
+
+     total magnetization       =     0.00 Bohr mag/cell
+     absolute magnetization    =     9.87 Bohr mag/cell
+
+     iteration #  6     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  4.41E-07,  avg # of iterations =  2.3
+
+     total cpu time spent up to now is       18.3 secs
+
+     total energy              =   -1376.66416690 Ry
+     estimated scf accuracy    <       0.00003628 Ry
+
+     total magnetization       =     0.00 Bohr mag/cell
+     absolute magnetization    =     9.86 Bohr mag/cell
+
+     iteration #  7     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  5.85E-08,  avg # of iterations =  5.4
+
+     total cpu time spent up to now is       21.0 secs
+
+     total energy              =   -1376.66417748 Ry
+     estimated scf accuracy    <       0.00001208 Ry
+
+     total magnetization       =     0.00 Bohr mag/cell
+     absolute magnetization    =     9.86 Bohr mag/cell
+
+     iteration #  8     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  1.95E-08,  avg # of iterations =  2.6
+
+     total cpu time spent up to now is       23.3 secs
+
+     total energy              =   -1376.66418075 Ry
+     estimated scf accuracy    <       0.00000213 Ry
+
+     total magnetization       =     0.00 Bohr mag/cell
+     absolute magnetization    =     9.86 Bohr mag/cell
+
+     iteration #  9     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  3.44E-09,  avg # of iterations =  2.8
+
+     total cpu time spent up to now is       25.6 secs
+
+     total energy              =   -1376.66418124 Ry
+     estimated scf accuracy    <       0.00000014 Ry
+
+     total magnetization       =    -0.00 Bohr mag/cell
+     absolute magnetization    =     9.86 Bohr mag/cell
+
+     iteration # 10     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  2.26E-10,  avg # of iterations =  4.5
+
+     total cpu time spent up to now is       28.4 secs
+
+     total energy              =   -1376.66418133 Ry
+     estimated scf accuracy    <       0.00000004 Ry
+
+     total magnetization       =    -0.00 Bohr mag/cell
+     absolute magnetization    =     9.85 Bohr mag/cell
+
+     iteration # 11     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  5.71E-11,  avg # of iterations =  4.6
+
+     total cpu time spent up to now is       31.0 secs
+
+     total energy              =   -1376.66418135 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     total magnetization       =    -0.00 Bohr mag/cell
+     absolute magnetization    =     9.85 Bohr mag/cell
+
+     iteration # 12     ecut=   120.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+     ethr =  3.05E-11,  avg # of iterations =  2.5
+ 
+     Magnetic moment per site  (integrated on atomic sphere of radius R)
+     atom   1 (R=0.247)  charge= 13.0107  magn=  4.4106
+     atom   2 (R=0.247)  charge= 13.0107  magn= -4.4105
+     atom   3 (R=0.247)  charge= 13.8303  magn=  0.0026
+     atom   4 (R=0.247)  charge= 13.8303  magn= -0.0026
+
+     total cpu time spent up to now is       33.3 secs
+
+     End of self-consistent calculation
+
+     =================== HUBBARD OCCUPATIONS ===================
+     ------------------------ ATOM    1 ------------------------
+     Tr[ns(  1)] (up, down, total) =   4.97871  0.24695  5.22566
+     Atomic magnetic moment for atom   1 =   4.73175
+     SPIN  1
+     eigenvalues:
+       0.994  0.995  0.995  0.997  0.997
+     eigenvectors (columns):
+       1.000 -0.000 -0.000  0.000 -0.000
+       0.000 -0.579 -0.195  0.440  0.659
+      -0.000  0.195 -0.579 -0.659  0.440
+       0.000 -0.252  0.751 -0.508  0.339
+       0.000  0.751  0.252  0.339  0.508
+     occupation matrix ns (before diag.):
+       0.994 -0.000 -0.000 -0.000 -0.000
+      -0.000  0.997 -0.000  0.000  0.001
+      -0.000 -0.000  0.997  0.001 -0.000
+      -0.000  0.000  0.001  0.996  0.000
+      -0.000  0.001 -0.000  0.000  0.996
+     SPIN  2
+     eigenvalues:
+       0.023  0.023  0.063  0.063  0.075
+     eigenvectors (columns):
+      -0.000  0.000 -0.000 -0.000  1.000
+       0.334  0.727 -0.580  0.152  0.000
+      -0.727  0.334  0.152  0.580  0.000
+      -0.545  0.251 -0.202 -0.774 -0.000
+       0.251  0.545  0.774 -0.202 -0.000
+     occupation matrix ns (before diag.):
+       0.075 -0.000 -0.000 -0.000 -0.000
+      -0.000  0.037 -0.000  0.000 -0.020
+      -0.000 -0.000  0.037 -0.020 -0.000
+      -0.000  0.000 -0.020  0.049  0.000
+      -0.000 -0.020 -0.000  0.000  0.049
+     ------------------------ ATOM    2 ------------------------
+     Tr[ns(  2)] (up, down, total) =   0.24695  4.97871  5.22566
+     Atomic magnetic moment for atom   2 =  -4.73175
+     SPIN  1
+     eigenvalues:
+       0.023  0.023  0.063  0.063  0.075
+     eigenvectors (columns):
+       0.000 -0.000 -0.000  0.000 -1.000
+      -0.513  0.614  0.490  0.346  0.000
+       0.614  0.513 -0.346  0.490  0.000
+      -0.460 -0.385 -0.462  0.653  0.000
+       0.385 -0.460  0.653  0.462  0.000
+     occupation matrix ns (before diag.):
+       0.075 -0.000 -0.000 -0.000 -0.000
+      -0.000  0.037 -0.000  0.000  0.020
+      -0.000 -0.000  0.037  0.020 -0.000
+      -0.000  0.000  0.020  0.049  0.000
+      -0.000  0.020 -0.000  0.000  0.049
+     SPIN  2
+     eigenvalues:
+       0.994  0.995  0.995  0.997  0.997
+     eigenvectors (columns):
+      -1.000 -0.000  0.000  0.000 -0.000
+      -0.000 -0.483 -0.373  0.784 -0.113
+      -0.000  0.373 -0.483 -0.113 -0.784
+      -0.000  0.484 -0.627  0.087  0.604
+      -0.000 -0.627 -0.484 -0.604  0.087
+     occupation matrix ns (before diag.):
+       0.994 -0.000 -0.000 -0.000 -0.000
+      -0.000  0.997 -0.000  0.000 -0.001
+      -0.000 -0.000  0.997 -0.001 -0.000
+      -0.000  0.000 -0.001  0.996  0.000
+      -0.000 -0.001 -0.000  0.000  0.996
+
+     Number of occupied Hubbard levels =   10.4513
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is     7.9793 ev
+
+!    total energy              =   -1376.66418136 Ry
+     total all-electron energy =    -14354.924692 Ry
+     estimated scf accuracy    <          7.2E-10 Ry
+     smearing contrib. (-TS)   =      -0.00000000 Ry
+     internal energy E=F+TS    =   -1376.66418136 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =    -751.42761682 Ry
+     hartree contribution      =     390.70654051 Ry
+     xc contribution           =    -113.16661781 Ry
+     ewald contribution        =    -465.47912704 Ry
+     Hubbard energy            =       0.09485610 Ry
+     one-center paw contrib.   =    -437.39221630 Ry
+
+     total magnetization       =    -0.00 Bohr mag/cell
+     absolute magnetization    =     9.85 Bohr mag/cell
+
+     convergence has been achieved in  12 iterations
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+Abort(1) on node 16 (rank 16 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 16
+Abort(1) on node 17 (rank 17 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 17
+Abort(1) on node 22 (rank 22 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 22
+1
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine force_hub (1):
+      forces in the DFT+U+J scheme are not implemented
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+1
+slurmstepd-cn003: error: *** STEP 120464.6 ON cn003 CANCELLED AT 2026-08-07T16:10:45 ***
+1
+1
+Abort(1) on node 20 (rank 20 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 20
+1
+Abort(1) on node 23 (rank 23 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 23
+Abort(1) on node 25 (rank 25 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 25
+Abort(1) on node 26 (rank 26 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 26
+Abort(1) on node 30 (rank 30 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 30
+1
+srun: error: cn003: tasks 0-21,23-63: Killed
+srun: error: cn003: task 22: Exited with exit code 1

@@ -1,0 +1,30 @@
+Loading icc version 2023.2.1
+=== uA_wz_U0p0  Fri Aug  7 15:37:40 CST 2026 ===
+[ok] uA_wz_U0p0  !    total energy              =   -1376.79989571 Ry
+=== uA_wz_U2p0  Fri Aug  7 15:41:43 CST 2026 ===
+[ok] uA_wz_U2p0  !    total energy              =   -1376.73655097 Ry
+=== uA_wz_U3p0  Fri Aug  7 15:46:59 CST 2026 ===
+[ok] uA_wz_U3p0  !    total energy              =   -1376.71254177 Ry
+=== uA_wz_U4p0  Fri Aug  7 15:52:40 CST 2026 ===
+[ok] uA_wz_U4p0  !    total energy              =   -1376.69215512 Ry
+=== uA_wz_U5p1  Fri Aug  7 15:58:19 CST 2026 ===
+[ok] uA_wz_U5p1  !    total energy              =   -1376.67314115 Ry
+=== uA_wz_U6p0  Fri Aug  7 16:04:16 CST 2026 ===
+[ok] uA_wz_U6p0  !    total energy              =   -1376.65978870 Ry
+=== uB_wz_L_U6p0_J0p9  Fri Aug  7 16:10:09 CST 2026 ===
+[FAIL] uB_wz_L_U6p0_J0p9 -- check whether it died BEFORE or AFTER '!    total energy'
+=== uA_rs_U0p0  Fri Aug  7 16:10:45 CST 2026 ===
+[ok] uA_rs_U0p0  !    total energy              =   -2753.55261839 Ry
+=== uA_rs_U2p0  Fri Aug  7 16:18:14 CST 2026 ===
+[ok] uA_rs_U2p0  !    total energy              =   -2753.43205330 Ry
+=== uA_rs_U3p0  Fri Aug  7 16:28:32 CST 2026 ===
+[ok] uA_rs_U3p0  !    total energy              =   -2753.38624309 Ry
+=== uA_rs_U4p0  Fri Aug  7 16:38:22 CST 2026 ===
+[ok] uA_rs_U4p0  !    total energy              =   -2753.34644075 Ry
+=== uA_rs_U5p1  Fri Aug  7 16:47:35 CST 2026 ===
+[ok] uA_rs_U5p1  !    total energy              =   -2753.30856351 Ry
+=== uA_rs_U6p0  Fri Aug  7 16:57:04 CST 2026 ===
+[ok] uA_rs_U6p0  !    total energy              =   -2753.28155309 Ry
+=== uB_rs_L_U6p0_J0p9  Fri Aug  7 17:06:24 CST 2026 ===
+[FAIL] uB_rs_L_U6p0_J0p9 -- check whether it died BEFORE or AFTER '!    total energy'
+ALL DONE Fri Aug  7 17:07:33 CST 2026

@@ -1,0 +1,58 @@
+Loading icc version 2023.2.1
+=== convA_rs_ecut40  Thu Aug  6 22:02:03 CST 2026 ===
+[ok] convA_rs_ecut40  !    total energy              =   -2752.88311812 Ry
+=== convA_rs_ecut50  Thu Aug  6 22:02:32 CST 2026 ===
+[ok] convA_rs_ecut50  !    total energy              =   -2753.24958426 Ry
+=== convA_rs_ecut60  Thu Aug  6 22:03:05 CST 2026 ===
+[ok] convA_rs_ecut60  !    total energy              =   -2753.26491582 Ry
+=== convA_rs_ecut70  Thu Aug  6 22:03:46 CST 2026 ===
+[ok] convA_rs_ecut70  !    total energy              =   -2753.28316640 Ry
+=== convA_rs_ecut80  Thu Aug  6 22:04:32 CST 2026 ===
+[ok] convA_rs_ecut80  !    total energy              =   -2753.29229488 Ry
+=== convA_rs_ecut90  Thu Aug  6 22:05:23 CST 2026 ===
+[ok] convA_rs_ecut90  !    total energy              =   -2753.29417363 Ry
+=== convA_wz_ecut40  Thu Aug  6 22:06:23 CST 2026 ===
+[ok] convA_wz_ecut40  !    total energy              =   -1376.45651637 Ry
+=== convA_wz_ecut50  Thu Aug  6 22:06:35 CST 2026 ===
+[ok] convA_wz_ecut50  !    total energy              =   -1376.64050435 Ry
+=== convA_wz_ecut60  Thu Aug  6 22:06:51 CST 2026 ===
+[ok] convA_wz_ecut60  !    total energy              =   -1376.64804551 Ry
+=== convA_wz_ecut70  Thu Aug  6 22:07:08 CST 2026 ===
+[ok] convA_wz_ecut70  !    total energy              =   -1376.65716033 Ry
+=== convA_wz_ecut80  Thu Aug  6 22:07:30 CST 2026 ===
+[ok] convA_wz_ecut80  !    total energy              =   -1376.66165368 Ry
+=== convA_wz_ecut90  Thu Aug  6 22:07:53 CST 2026 ===
+[ok] convA_wz_ecut90  !    total energy              =   -1376.66259736 Ry
+=== convA_rs_k4  Thu Aug  6 22:08:17 CST 2026 ===
+[ok] convA_rs_k4  !    total energy              =   -2753.28280751 Ry
+=== convA_rs_k6  Thu Aug  6 22:08:42 CST 2026 ===
+[ok] convA_rs_k6  !    total energy              =   -2753.28316640 Ry
+=== convA_rs_k8  Thu Aug  6 22:09:28 CST 2026 ===
+[ok] convA_rs_k8  !    total energy              =   -2753.28317345 Ry
+=== convA_rs_k10  Thu Aug  6 22:10:51 CST 2026 ===
+[ok] convA_rs_k10  !    total energy              =   -2753.28317076 Ry
+=== convA_wz_k6  Thu Aug  6 22:13:05 CST 2026 ===
+[ok] convA_wz_k6  !    total energy              =   -1376.65706345 Ry
+=== convA_wz_k8  Thu Aug  6 22:13:18 CST 2026 ===
+[ok] convA_wz_k8  !    total energy              =   -1376.65716033 Ry
+=== convA_wz_k10  Thu Aug  6 22:13:40 CST 2026 ===
+[ok] convA_wz_k10  !    total energy              =   -1376.65716946 Ry
+=== convA_wz_k12  Thu Aug  6 22:14:09 CST 2026 ===
+[ok] convA_wz_k12  !    total energy              =   -1376.65717035 Ry
+=== ordB_rs_FM  Thu Aug  6 22:14:57 CST 2026 ===
+[ok] ordB_rs_FM  !    total energy              =  -22026.24836902 Ry
+=== ordB_rs_AFMI  Thu Aug  6 23:12:25 CST 2026 ===
+[ok] ordB_rs_AFMI  !    total energy              =  -22026.26538764 Ry
+=== ordB_rs_AFMII  Fri Aug  7 00:59:01 CST 2026 ===
+[ok] ordB_rs_AFMII  !    total energy              =  -22026.30277540 Ry
+=== ordB_wz_FM  Fri Aug  7 02:18:22 CST 2026 ===
+[ok] ordB_wz_FM  !    total energy              =   -1376.65254665 Ry
+=== ordB_wz_AFM  Fri Aug  7 02:18:45 CST 2026 ===
+[ok] ordB_wz_AFM  !    total energy              =   -1376.65716946 Ry
+=== relC_wz_AFM  Fri Aug  7 02:19:14 CST 2026 ===
+[ok] relC_wz_AFM  !    total energy              =   -1376.66595969 Ry
+=== relC_rs_AFMI_quick  Fri Aug  7 02:22:47 CST 2026 ===
+[ok] relC_rs_AFMI_quick  !    total energy              =   -2753.29406850 Ry
+=== relC_rs_AFMII  Fri Aug  7 02:27:21 CST 2026 ===
+[ok] relC_rs_AFMII  !    total energy              =  -22026.36991621 Ry
+ALL DONE Fri Aug  7 14:24:57 CST 2026

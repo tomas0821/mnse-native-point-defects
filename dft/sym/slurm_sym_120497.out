@@ -1,0 +1,8 @@
+Loading icc version 2023.2.1
+######## A. NULL CONTROL: alpha-MnSe AFM-II primitive, must give ZERO splitting ########
+  scf ok
+  bands ok (302 blocks)
+######## B. g-WAVE SCAN: w-MnSe azimuthal k-circle ########
+  scf ok
+  g-wave scan ok (98 blocks)
+ALL DONE

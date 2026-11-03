@@ -1,0 +1,22 @@
+Loading icc version 2023.2.1
+=== convA_rs_ecut100  Fri Aug  7 05:41:02 CST 2026 ===
+[ok] convA_rs_ecut100  !    total energy              =   -2753.29506540 Ry
+=== convA_rs_ecut110  Fri Aug  7 05:42:14 CST 2026 ===
+[ok] convA_rs_ecut110  !    total energy              =   -2753.29622793 Ry
+=== convA_rs_ecut120  Fri Aug  7 05:43:38 CST 2026 ===
+[ok] convA_rs_ecut120  !    total energy              =   -2753.29707153 Ry
+=== convA_rs_ecut130  Fri Aug  7 05:45:08 CST 2026 ===
+[ok] convA_rs_ecut130  !    total energy              =   -2753.29743489 Ry
+=== convA_rs_ecut140  Fri Aug  7 05:46:49 CST 2026 ===
+[ok] convA_rs_ecut140  !    total energy              =   -2753.29755756 Ry
+=== convA_wz_ecut100  Fri Aug  7 05:48:40 CST 2026 ===
+[ok] convA_wz_ecut100  !    total energy              =   -1376.66302938 Ry
+=== convA_wz_ecut110  Fri Aug  7 05:49:11 CST 2026 ===
+[ok] convA_wz_ecut110  !    total energy              =   -1376.66359991 Ry
+=== convA_wz_ecut120  Fri Aug  7 05:49:44 CST 2026 ===
+[ok] convA_wz_ecut120  !    total energy              =   -1376.66402198 Ry
+=== convA_wz_ecut130  Fri Aug  7 05:50:19 CST 2026 ===
+[ok] convA_wz_ecut130  !    total energy              =   -1376.66420738 Ry
+=== convA_wz_ecut140  Fri Aug  7 05:50:56 CST 2026 ===
+[ok] convA_wz_ecut140  !    total energy              =   -1376.66425840 Ry
+ALL DONE Fri Aug  7 05:51:34 CST 2026

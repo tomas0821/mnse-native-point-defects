@@ -1,0 +1,47 @@
+&CONTROL
+    calculation = 'vc-relax'
+    prefix      = 's3_ref_Se'
+    pseudo_dir  = '/home/tomas.rojas_s/pseudo'
+    outdir      = './tmp_s3_ref_Se'
+    tprnfor     = .true.
+    tstress     = .true.
+    forc_conv_thr = 1.0d-4
+    etot_conv_thr = 1.0d-5
+    nstep = 200
+/
+&SYSTEM
+    ibrav       = 0
+    nat         = 3
+    ntyp        = 1
+    ecutwfc     = 120.0
+    ecutrho     = 960.0
+    occupations = 'smearing'
+    smearing    = 'gaussian'
+    degauss     = 0.01
+    nspin       = 2
+    starting_magnetization(1) = +0.0
+/
+&ELECTRONS
+    conv_thr        = 1.0d-8
+    mixing_beta     = 0.3
+    electron_maxstep = 200
+/
+&IONS
+    ion_dynamics = 'bfgs'
+/
+&CELL
+    cell_dynamics = 'bfgs'
+    press_conv_thr = 0.5
+/
+ATOMIC_SPECIES
+  Se 78.971 Se.pbe-dn-kjpaw_psl.1.0.0.UPF
+CELL_PARAMETERS angstrom
+  4.3662000000 0.0000000000 0.0000000000
+  -2.1831000000 3.7812401180 0.0000000000
+  0.0000000000 0.0000000000 4.9536000000
+ATOMIC_POSITIONS angstrom
+  Se 0.9841414800 0.0000000000 1.6512000000
+  Se -0.4920707400 0.8522915226 3.3024000000
+  Se -0.4920707400 -0.8522915226 0.0000000000
+K_POINTS automatic
+  8 8 6 0 0 0

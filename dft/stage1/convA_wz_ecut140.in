@@ -1,0 +1,45 @@
+&CONTROL
+    calculation = 'scf'
+    prefix      = 'convA_wz_ecut140'
+    pseudo_dir  = '/home/tomas.rojas_s/pseudo'
+    outdir      = './tmp'
+    tprnfor     = .true.
+    tstress     = .true.
+/
+&SYSTEM
+    ibrav       = 0
+    nat         = 4
+    ntyp        = 3
+    ecutwfc     = 140.0
+    ecutrho     = 1120.0
+    occupations = 'smearing'
+    smearing    = 'gaussian'
+    degauss     = 0.01
+    nspin       = 2
+    starting_magnetization(1) = +0.5
+    starting_magnetization(2) = -0.5
+    starting_magnetization(3) = +0.0
+/
+&ELECTRONS
+    conv_thr        = 1.0d-8
+    mixing_beta     = 0.3
+    electron_maxstep = 200
+/
+ATOMIC_SPECIES
+  Mn1 54.938044 Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+  Mn2 54.938044 Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+  Se 78.971 Se.pbe-dn-kjpaw_psl.1.0.0.UPF
+HUBBARD (ortho-atomic)
+U Mn1-3d 5.1
+U Mn2-3d 5.1
+CELL_PARAMETERS angstrom
+  4.1900000000 0.0000000000 0.0000000000
+  -2.0950000000 3.6286464419 0.0000000000
+  0.0000000000 0.0000000000 6.6800000000
+ATOMIC_POSITIONS angstrom
+  Mn1 0.0000000000 2.4190976279 0.0000000000
+  Mn2 2.0950000000 1.2095488140 3.3400000000
+  Se 0.0000000000 2.4190976279 2.5050000000
+  Se 2.0950000000 1.2095488140 5.8450000000
+K_POINTS automatic
+  8 8 6 0 0 0

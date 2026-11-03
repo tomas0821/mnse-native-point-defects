@@ -1,0 +1,9 @@
+polymorph,defect,first_shell_n,first_shell_species,first_shell_R_A,first_shell_mean_radial_disp_A,max_atomic_disp_A,bulk_site_moment_muB,max_abs_moment_change_excl_antisite_muB,at_R_A,antisite_Mn_moment_muB
+rs,V_Mn,6,Se,2.766,+0.129,0.129,4.509,0.130,5.53,
+rs,V_Se,6,Mn,2.766,-0.148,0.148,4.509,0.014,4.78,
+rs,Se_Mn,6,Se,2.766,+0.092,0.092,4.509,0.150,5.53,
+rs,Mn_Se,6,Mn,2.766,+0.106,0.113,4.509,0.111,2.77,+4.159
+wz,V_Mn,4,Se,2.570,-0.027,0.070,4.434,0.043,4.27,
+wz,V_Se,4,Mn,2.570,-0.390,0.592,4.434,0.100,2.57,
+wz,Se_Mn,4,Se,2.570,+0.166,0.766,4.434,0.034,4.22,
+wz,Mn_Se,4,Mn,2.570,+0.298,0.317,4.434,0.327,2.61,+4.236

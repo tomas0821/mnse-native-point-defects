@@ -1,0 +1,16 @@
+Loading icc version 2023.2.1
+=== ordB_rs_AFMII_c120  Fri Aug  7 05:57:16 CST 2026 ===
+[ok] ordB_rs_AFMII_c120  !    total energy              =  -22026.41406238 Ry
+=== ordB_rs_AFMI_c120  Fri Aug  7 08:58:11 CST 2026 ===
+[ok] ordB_rs_AFMI_c120  !    total energy              =  -22026.37663116 Ry
+=== ordB_rs_FM_c120  Fri Aug  7 12:50:32 CST 2026 ===
+[FAIL] ordB_rs_FM_c120 -- see ordB_rs_FM_c120.out
+=== ordB_wz_AFM_c120  Fri Aug  7 14:56:41 CST 2026 ===
+[ok] ordB_wz_AFM_c120  !    total energy              =   -1376.66403189 Ry
+=== ordB_wz_FM_c120  Fri Aug  7 14:57:25 CST 2026 ===
+[ok] ordB_wz_FM_c120  !    total energy              =   -1376.65940672 Ry
+=== relC_rs_AFMI_quick_c120  Fri Aug  7 14:57:59 CST 2026 ===
+[ok] relC_rs_AFMI_quick_c120  !    total energy              =   -2753.30856351 Ry
+=== relC_wz_AFM_c120  Fri Aug  7 15:07:29 CST 2026 ===
+[ok] relC_wz_AFM_c120  !    total energy              =   -1376.67314115 Ry
+ALL DONE Fri Aug  7 15:13:27 CST 2026
