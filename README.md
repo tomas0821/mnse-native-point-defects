@@ -7,7 +7,8 @@ polymorphs: rock-salt α-MnSe (type-II antiferromagnet) and wurtzite w-MnSe.
 **On the magnetic order of w-MnSe.** The defect cells use the A-type order, for which an altermagnetic
 spin splitting is predicted. It is not the lowest collinear order in DFT: a spin-degenerate stripe order
 (Mavani et al., Phys. Rev. Materials 10, 064408 (2026)) lies 14.3 meV per formula unit below it at these
-settings (`dft/stripe/`). The magnetic order of w-MnSe has not been measured.
+settings (`dft/stripe/`), and the formation energies shift between the two orders by up to 0.24 eV
+(`data/order_shift.csv`). The magnetic order of w-MnSe has not been measured.
 
 **Authors:** Tomás Rojas Solorzano (CICIMA and Sede de Occidente, Universidad de Costa Rica;
 tomas.rojas_s@ucr.ac.cr) and Dale Igram (University of Michigan–Dearborn).
@@ -23,6 +24,7 @@ tomas.rojas_s@ucr.ac.cr) and Dale Igram (University of Michigan–Dearborn).
 | `data/total_energies.csv` | The raw total energies (Ry, 120 Ry cutoff) behind every formation energy, with the output file each one comes from |
 | `data/formation_energies.csv` | Formation energies (eV) of the four defects in both polymorphs at four chemical-potential limits |
 | `data/local_structure.csv` | First-shell relaxation, largest displacement, and Mn site-moment changes per defect |
+| `data/order_shift.csv` | Change of the formation energies between the A-type and stripe orders |
 | `data/structures/` | Relaxed defect supercells (extended XYZ, Å) with per-site magnetic moments |
 | `data/tab_*.tex` | The same tables as LaTeX, including the unfolded spin splitting (`tab_stage5.tex`) |
 | `dft/` | Quantum ESPRESSO inputs (and selected outputs) for every stage, plus the scripts that build the cells and analyse the results |

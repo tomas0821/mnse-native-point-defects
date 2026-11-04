@@ -1,0 +1,4 @@
+defect,E_f(stripe)-E_f(A-type) eV,M A-type,M stripe,note
+V_Mn,+0.240,-5.39,-3.05,"unrelaxed, 64-atom 4x2x2, 70/560 Ry, each order on its own host"
+V_Se,+0.006,0.00,0.00,same
+Se_Mn,-0.053,-5.02,-3.01,same

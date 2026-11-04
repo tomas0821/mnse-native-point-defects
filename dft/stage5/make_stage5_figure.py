@@ -2,7 +2,8 @@
 """Fig. — unfolded spin splitting of w-MnSe primitive band 27 along L1-Gamma-L2, by peak tracking:
 the pristine curve at the relaxed internal parameter (s_relaxed_u.npz, written by
 make_stage5_table.py, the like-for-like reference) vs the four defect cells (s_<defect>.npz from
-peak_track.py --dump). Panel (b) spread: Gaussian widths 0.02-0.05 eV (spread_<defect>.npz). Writes
+peak_track.py --dump). Hollow markers: the tracked peak holds weight below 0.6 in at least one spin, because the
+band has fragmented. Panel (b) spread: Gaussian widths 0.02-0.05 eV (spread_<defect>.npz). Writes
 ../../figures/fig_stage5_splitting.{pdf,png}."""
 import os
 import numpy as np
@@ -24,6 +25,7 @@ plt.rcParams.update({"font.size": 8.5, "axes.edgecolor": INK2, "axes.labelcolor"
                      "mathtext.fontset": "dejavusans"})
 
 x = np.concatenate([np.linspace(0, 1, 21), 1 + np.linspace(0, 1, 21)[1:]])  # L1..G..L2, 41 pts
+WMIN = 0.6
 fig, (ax, bx) = plt.subplots(1, 2, figsize=(7.2, 2.9), gridspec_kw={"width_ratios": [1.6, 1], "wspace": 0.35})
 ax.axhline(0, color=GRID, lw=0.8, zorder=0)
 ax.axvspan(1 - 3.5 / 20, 1 + 3.5 / 20, color="#efeeea", lw=0, zorder=0)  # near-degenerate: not interpreted
@@ -40,12 +42,18 @@ for key in ("pristine", "V_Mn", "V_Se", "Se_Mn", "Mn_Se"):
     else:
         c, ls = STYLE[key]
         ax.plot(x, s, color=c, ls=ls, lw=1.8, zorder=3, label=LABEL[key])
+        low = np.nanmin(d["wgt"], axis=0) < WMIN   # the tracked peak holds little weight: the band has fragmented
+        ax.plot(x[low], s[low], ls="", marker="o", ms=4.2, mfc="white", mec=c, mew=1.1, zorder=4)
     present.append((key, float(np.abs(d["odd"][13])), float(np.abs(d["even"][13]))))  # at the pristine peak
 ax.set_xticks([0, 1, 2], [r"L$_1$", r"$\Gamma$", r"L$_2$"])
 ax.set_xlim(0, 2)
 ax.set_ylabel(r"$E_\uparrow - E_\downarrow$ (meV)")
 ax.set_ylim(-300, 300)
-ax.legend(frameon=False, fontsize=7.5, loc="upper left", ncol=1)
+from matplotlib.lines import Line2D  # noqa: E402
+hdl, lab = ax.get_legend_handles_labels()
+hdl.append(Line2D([], [], ls="", marker="o", ms=4.2, mfc="white", mec=INK2, mew=1.1))
+lab.append(f"peak weight < {WMIN}")
+ax.legend(hdl, lab, frameon=False, fontsize=7.5, loc="upper left", ncol=1)
 for sp in ("top", "right"):
     ax.spines[sp].set_visible(False)
 ax.text(0.0, 1.03, "(a)", transform=ax.transAxes, fontsize=8.5, color=INK)

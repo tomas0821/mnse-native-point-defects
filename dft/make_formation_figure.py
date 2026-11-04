@@ -32,7 +32,7 @@ plt.rcParams.update({"font.size": 8.5, "axes.edgecolor": INK2, "axes.labelcolor"
 t = table()
 fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.0), sharey=True,
                          gridspec_kw={"wspace": 0.30})
-titles = {"rs": r"$\alpha$-MnSe (rock-salt, AFM-II)", "wz": "w-MnSe (wurtzite, altermagnet)"}
+titles = {"rs": r"$\alpha$-MnSe (rock-salt, AFM-II)", "wz": "w-MnSe (wurtzite, A-type)"}
 x0, x1 = DMU_MNRICH, 0.0
 for ax, p in zip(axes, ("rs", "wz")):
     ax.axvspan(DMU_MNSE2, x1, color="#efeeea", lw=0, zorder=0)
