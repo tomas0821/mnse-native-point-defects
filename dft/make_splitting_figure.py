@@ -3,8 +3,7 @@
 The headline validation figure: w-MnSe altermagnetic spin splitting.
 
 (a) spin-resolved bands along L1-Gamma-L2
-(b) splitting vs azimuth on a k-circle -- the 6-fold sign alternation, which IS
-    the 6_3 operation (60 deg rotation + non-primitive translation) made visible
+(b) splitting vs azimuth on a k-circle: the sign alternates every 60 degrees
 
 Same spin colours as the structure figures (validated for colour-vision
 deficiency: normal-vision dE_OKLab 27.4, worst-case dichromat 18.2). Spin is
@@ -65,8 +64,7 @@ ax.set_xticks([0, n // 2, n - 1])
 ax.set_xticklabels(["L$_1$", "Γ", "L$_2$"], fontsize=11)
 ax.set_xlim(0, n - 1)
 ax.set_ylabel("E − E$_{VBM}$  (eV)", fontsize=10, color=INK)
-ax.set_title("(a)  spin-resolved bands, w-MnSe", fontsize=11, color=INK,
-             weight="bold", loc="left")
+ax.set_title("(a)", fontsize=11, color=INK, loc="left")
 ax.tick_params(labelsize=9, colors=MUTED)
 for s in ("top", "right"):
     ax.spines[s].set_visible(False)
@@ -74,8 +72,6 @@ for s in ("left", "bottom"):
     ax.spines[s].set_color(GRID)
 ax.legend(frameon=False, fontsize=9, loc="upper center", ncol=2,
           bbox_to_anchor=(0.5, 1.13))
-ax.text(0.5, 0.02, "zero AT L$_1$, Γ, L$_2$ — maximal in between",
-        transform=ax.transAxes, ha="center", fontsize=8.4, color=MUTED)
 
 # ---------------- (b) azimuthal scan: the 6-fold sign alternation ------------
 ax2 = fig.add_subplot(1, 2, 2)
@@ -92,23 +88,13 @@ ax2.set_xticks(range(0, 361, 60))
 ax2.set_xlim(0, 360)
 ax2.set_xlabel("azimuth φ around the c-axis  (degrees)", fontsize=10, color=INK)
 ax2.set_ylabel("E$_↑$ − E$_↓$   (meV)", fontsize=10, color=INK)
-ax2.set_title("(b)  the 6-fold operation, measured", fontsize=11, color=INK,
-              weight="bold", loc="left")
+ax2.set_title("(b)", fontsize=11, color=INK, loc="left")
 ax2.tick_params(labelsize=9, colors=MUTED)
 for s in ("top", "right"):
     ax2.spines[s].set_visible(False)
 for s in ("left", "bottom"):
     ax2.spines[s].set_color(GRID)
 pk = np.abs(spl).max()
-ax2.text(0.5, 0.965, f"nodes every 60°  ·  |peak| = {pk:.0f} meV",
-         transform=ax2.transAxes, ha="center", fontsize=8.6, color=MUTED)
-ax2.text(0.5, 0.045,
-         "a 60° rotation exchanges the two Mn sublattices,\nso it must flip the sign — and it does",
-         transform=ax2.transAxes, ha="center", fontsize=8.2, color=MUTED)
-
-fig.suptitle("w-MnSe altermagnetic spin splitting — non-relativistic (no SOC), "
-             "U = 3.76 eV from linear response",
-             fontsize=11.5, color=INK, weight="bold", y=1.005)
 fig.tight_layout()
 p = os.path.join(FIGS, "fig4_w-MnSe_spin-splitting.png")
 fig.savefig(p, bbox_inches="tight", facecolor="white")

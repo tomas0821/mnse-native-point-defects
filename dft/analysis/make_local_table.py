@@ -22,7 +22,7 @@ tex = r"""\begin{table}[t]
 \caption{Local relaxation and net magnetization of the defect cells. $\Delta r_1$: mean radial
 displacement of the first coordination shell (positive outward); $|u|_{\max}$: largest atomic
 displacement in the cell; $|M|$: net magnetization of the cell ($\mu_{\mathrm{B}}$).
-First shells: six neighbours at 2.77~\AA\ in $\alpha$-MnSe, four at 2.57--2.61~\AA\ in w-MnSe.
+First shells: six neighbors at 2.77~\AA\ in $\alpha$-MnSe, four at 2.57--2.61~\AA\ in w-MnSe.
 $^a$Constrained at the minimum of the $M$ scan.}
 \label{tab:local}
 \begin{tabular}{lrrrrrr}

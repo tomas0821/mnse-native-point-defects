@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Spin splitting from unfolded supercell spectra (Stage 5).
 
+NOT used for the defect cells: stacking cumulative weight misassigns the two spins whenever a
+defect removes spectral weight unequally between them (V_Mn: 10.72 vs 10.99), giving a spurious
+uniform splitting. Use peak_track.py. Kept because it validates the pristine weights.
+
 usage: unfold_analyse.py WEIGHTS.npz BANDS.out [--lo EV] [--hi EV] [--nb 11] [--band 7]
                          [--pristine] [--dump FILE]
 

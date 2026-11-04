@@ -15,7 +15,10 @@ RY = 13.605693123
 
 E_SE3 = -1205.44004815                 # stage3prep/s3_ref_Se.out, trigonal Se, 3 atoms
 HOST = {"rs": (-22026.89992696, 32),   # prod/d_rs_pristine_s120.out, 32 f.u.
-        "wz": (-24780.54010775, 36)}   # prod/d_wz_pristine_s120.out, 36 f.u.
+        # 72-atom host at the RELAXED internal parameter u = 0.37782. The defect cells relax their far
+        # field to u = 0.377-0.379, so the ideal-u host (-24780.54010775 Ry, prod/d_wz_pristine_s120.out,
+        # not force-free, 0.0037 Ry/bohr) lowers every w-MnSe E_f by about 0.03 eV.
+        "wz": (-24780.54246308, 36)}   # prod_relaxedu/d_wz_pristine_ru_s120.out, 36 f.u.
 DEF = {  # (E_def Ry, n_Mn, n_Se, source, constraint/total magnetization)
     "rs": {"V_Mn": (-21740.31691645, -1, 0, "prod/d_rs_V_Mn_s120.out", "M=3.71"),
            "V_Se": (-21624.82558186, 0, -1, "prod/d_rs_V_Se_s120.out", "M=0"),

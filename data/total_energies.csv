@@ -5,7 +5,7 @@ V_Mn,rs,-21740.31691645,,prod/d_rs_V_Mn_s120.out,M=3.71
 V_Se,rs,-21624.82558186,,prod/d_rs_V_Se_s120.out,M=0
 Se_Mn,rs,-22142.04600122,,prod/d_rs_Se_Mn_s120.out,M=3.00
 Mn_Se,rs,-21911.10496013,,anti/rsMnSe_M5_s120.out,M=5 (constrained)
-pristine host,wz,-24780.54010775,36,prod/d_wz_pristine_s120.out,0
+pristine host,wz,-24780.54246308,36,prod_relaxedu/d_wz_pristine_ru_s120.out,0
 V_Mn,wz,-24493.87426264,,prod/d_wz_V_Mn_s120.out,M=-5.25
 V_Se,wz,-24378.46008823,,prod/d_wz_V_Se_s120.out,M=0
 Se_Mn,wz,-24895.70752742,,prod/d_wz_Se_Mn_s120.out,M=-5.00

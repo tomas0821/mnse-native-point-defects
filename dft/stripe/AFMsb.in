@@ -1,0 +1,52 @@
+&CONTROL
+    calculation = 'scf'
+    prefix      = 'AFMsb'
+    pseudo_dir  = '/home/tomas.rojas_s/pseudo'
+    outdir      = './tmp_AFMsb'
+    tprnfor     = .true.
+    tstress     = .false.
+    forc_conv_thr = 1.0d-4
+    etot_conv_thr = 1.0d-5
+    nstep       = 100
+/
+&SYSTEM
+    ibrav       = 0
+    nat         = 8
+    ntyp        = 3
+    ecutwfc     = 120.0
+    ecutrho     = 960.0
+    occupations = 'smearing'
+    smearing    = 'gaussian'
+    degauss     = 0.01
+    nspin       = 2
+    starting_magnetization(1) = +0.5
+    starting_magnetization(2) = -0.5
+    starting_magnetization(3) = +0.0
+/
+&ELECTRONS
+    conv_thr        = 1.0d-8
+    mixing_beta     = 0.3
+    electron_maxstep = 200
+/
+ATOMIC_SPECIES
+  Mn1 54.938044 Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+  Mn2 54.938044 Mn.pbe-spn-kjpaw_psl.0.3.1.UPF
+  Se 78.971 Se.pbe-dn-kjpaw_psl.1.0.0.UPF
+HUBBARD (ortho-atomic)
+U Mn1-3d 3.7574
+U Mn2-3d 3.7574
+CELL_PARAMETERS angstrom
+  8.5411660560 0.0000000000 0.0000000000
+  -2.1352915140 3.6984333910 0.0000000000
+  0.0000000000 0.0000000000 6.8542951040
+ATOMIC_POSITIONS angstrom
+  Mn1 0.0000000000 2.4656222608 -0.0096777392
+  Mn2 4.2705830280 2.4656222608 -0.0096777392
+  Mn1 2.1352915140 1.2328111304 3.4174697914
+  Mn2 6.4058745420 1.2328111304 3.4174697914
+  Se 0.0000000000 2.4656222608 2.5800391630
+  Se 4.2705830280 2.4656222608 2.5800391630
+  Se 2.1352915140 1.2328111304 6.0071852168
+  Se 6.4058745420 1.2328111304 6.0071852168
+K_POINTS automatic
+  5 10 6 0 0 0

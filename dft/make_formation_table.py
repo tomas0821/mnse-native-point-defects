@@ -30,6 +30,7 @@ $n_{\mathrm{Mn}} - n_{\mathrm{Se}}$ of $E_f$ versus $\Delta\mu_{\mathrm{Se}}$ is
 last column gives the polymorph difference $E_f(\mathrm{w}) - E_f(\alpha)$, which is the same in
 every limit.}
 \label{tab:Ef}
+\small\setlength{\tabcolsep}{4pt}
 \begin{tabular}{lrrrrrrrr}
 \toprule
  & & \multicolumn{3}{c}{$\alpha$-MnSe} & \multicolumn{3}{c}{w-MnSe} & \\

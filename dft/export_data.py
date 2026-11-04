@@ -24,7 +24,7 @@ with open(os.path.join(DATA, "total_energies.csv"), "w", newline="") as f:
     w.writerow(["system", "polymorph", "E_total_Ry", "n_formula_units", "source_output", "net_magnetization"])
     w.writerow(["trigonal Se (3 atoms)", "-", F.E_SE3, "", "stage3prep/s3_ref_Se.out", ""])
     for p, (eh, nfu) in F.HOST.items():
-        w.writerow(["pristine host", p, eh, nfu, f"prod/d_{p}_pristine_s120.out", "0"])
+        w.writerow(["pristine host", p, eh, nfu, "prod/d_rs_pristine_s120.out" if p == "rs" else "prod_relaxedu/d_wz_pristine_ru_s120.out", "0"])
         for d in DEF:
             ed, nmn, nse, src, mag = F.DEF[p][d]
             w.writerow([d, p, ed, "", src, mag])
