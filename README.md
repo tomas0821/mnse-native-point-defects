@@ -8,8 +8,8 @@ polymorphs: rock-salt α-MnSe (type-II antiferromagnet) and wurtzite w-MnSe.
 spin splitting is predicted. It is not the lowest collinear order in DFT: a spin-degenerate stripe order
 (Mavani et al., Phys. Rev. Materials 10, 064408 (2026)) lies 14.3 meV per formula unit below it at these
 settings (`dft/stripe/`). With the defects relaxed in both orders, the formation energies of V<sub>Mn</sub> and
-Se<sub>Mn</sub> shift by +0.26 and -0.01 eV (`data/order_shift.csv`; a spin-state check of the stripe-order
-V<sub>Mn</sub> is in progress). Magnetometry shows w-MnSe is antiferromagnetic below 62 K (Grzybowski et al.,
+Se<sub>Mn</sub> shift by +0.26 and -0.01 eV (`data/order_shift.csv`). The stripe-order V<sub>Mn</sub> converges to
+M = -3.06 μ<sub>B</sub>; at its relaxed geometry M = -5 and -7 lie 0.21 and 0.45 eV higher (`dft/stripe/sm_*`). Magnetometry shows w-MnSe is antiferromagnetic below 62 K (Grzybowski et al.,
 arXiv:2611.09509), but the type of order has not been determined.
 
 **Authors:** Tomás Rojas Solorzano (CICIMA and Sede de Occidente, Universidad de Costa Rica;
@@ -31,6 +31,7 @@ Physica B: Condensed Matter; tagged releases correspond to manuscript versions.
 | `data/formation_energies.csv` | Formation energies (eV) of the four defects in both polymorphs at four chemical-potential limits |
 | `data/local_structure.csv` | First-shell relaxation, largest displacement, and Mn site-moment changes per defect |
 | `data/order_shift.csv` | Change of the formation energies between the A-type and stripe orders, unrelaxed and relaxed |
+| `data/relaxation_energies.csv` | Relaxation energy of every defect (ideal sites to relaxed, 70 Ry), with the two total energies and the files they come from, and the polymorph difference with and without relaxation. The wurtzite `gain_eV` excludes the 0.032 eV the 72-atom host gains from u = 0.375 to 0.378 (`dft/analysis/relax_gains.py`) |
 | `data/structures/` | Relaxed defect supercells (extended XYZ, Å) with per-site magnetic moments |
 | `data/tab_*.tex` | The same tables as LaTeX, including the unfolded spin splitting (`tab_stage5.tex`) |
 | `dft/` | Quantum ESPRESSO inputs (and selected outputs) for every stage, plus the scripts that build the cells and analyse the results |
@@ -50,8 +51,9 @@ Inside `dft/`:
 | `stage5/` | Spin splitting in supercells: band unfolding scripts, spectral weights and bands of the pristine and defect cells, peak tracking, the comparison of estimators (`estimator_compare.py`). The wavefunctions were deleted after analysis; `RECREATE_WAVEFUNCTIONS.md` gives the exact steps, cost and checks to regenerate them |
 | `stripe/` | A-type, stripe and ferromagnetic orders of w-MnSe in a doubled cell; defects in both orders in a 64-atom cell, unrelaxed (`sd_*`), relaxed in legs (`sr_*_L*`, `run_relax.sh`, `order_shift_relaxed.py`) and spin-state checks (`sm_*`) |
 | `spinscan/` | Constrained-magnetization scans at the relaxed defect geometries, and the off-center relaxation of rock-salt Se<sub>Mn</sub> |
+| `unrelaxed/` | Single points of the 72-atom wurtzite V<sub>Se</sub> and Se<sub>Mn</sub> cells at ideal sites, the start of their relaxations |
 | `prod_relaxedu/` | 72-atom wurtzite host at the relaxed internal parameter, the reference for the formation energies |
-| `analysis/` | Per-site positions and moments of every defect cell, and the local-structure analysis |
+| `analysis/` | Per-site positions and moments of every defect cell, the local-structure analysis, and the relaxation energies (`relax_gains.py`; it reads the 70 Ry relaxation logs, which are summarized in `data/relaxation_energies.csv`) |
 
 ## Calculation settings (summary)
 

@@ -1,0 +1,9 @@
+polymorph,defect,E_ideal_Ry,E_relaxed_Ry,gain_eV,w_minus_alpha_relaxed_eV,w_minus_alpha_ideal_sites_eV,ideal_from,relaxed_from
+rs,V_Mn,-21740.18537040,-21740.20599933,0.281,+1.053,+0.911,prod/d_rs_V_Mn_r70.out,prod/d_rs_V_Mn_r70.out
+wz,V_Mn,-24493.73870662,-24493.75125883,0.139,+1.053,+0.911,prod/d_wz_V_Mn_r70.out,prod/d_wz_V_Mn_r70.out prod/d_wz_V_Mn_rs.out
+rs,V_Se,-21624.70777179,-21624.71731192,0.130,+0.109,+0.512,prod/d_rs_V_Se_r70.out,prod/d_rs_V_Se_r70.out
+wz,V_Se,-24378.29832683,-24378.33978592,0.532,+0.109,+0.512,unrelaxed/u_wz_V_Se.out,prod/d_wz_V_Se_r70.out prod/d_wz_V_Se_rs.out
+rs,Se_Mn,-22141.92117845,-22141.93195462,0.147,-0.364,+0.788,prod/d_rs_Se_Mn_r70.out,prod/d_rs_Se_Mn_r70.out
+wz,Se_Mn,-24895.48364136,-24895.58142190,1.298,-0.364,+0.788,unrelaxed/u_wz_Se_Mn.out,prod/d_wz_Se_Mn_r70.out prod/d_wz_Se_Mn_rs.out
+rs,Mn_Se,-21910.98297636,-21910.99621625,0.180,+0.676,+1.048,anti/anti_M5p0.out,anti/rsMnSe_M5.out
+wz,Mn_Se,-24664.54192292,-24664.58486479,0.552,+0.676,+1.048,prod/wzscan/wzanti_M3.out,prod/wzMnSe_M3rs.out
