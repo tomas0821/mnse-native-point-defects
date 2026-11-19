@@ -8,6 +8,7 @@
     forc_conv_thr = 1.0d-4
     etot_conv_thr = 1.0d-5
     nstep = 200
+    max_seconds = 84000
 /
 &SYSTEM
     ibrav       = 0

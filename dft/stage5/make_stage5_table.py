@@ -6,7 +6,7 @@ is quoted there. Ranges: Gaussian widths 0.02/0.03/0.04/0.05 eV. Reference: the 
 RELAXED internal parameter u = 0.3778 (bands/b_wz_bands.out, 41-point subset of the same path), because
 the far field of every relaxed defect cell has left u = 0.375 and sits at u = 0.377-0.379; the unfolded
 pristine supercell (u = 0.375, 239 meV) validates the method and is listed for that purpose.
-Writes ../../data/tab_stage5.tex; prints a plain summary."""
+Writes ../../manuscript/tab_stage5.tex; prints a plain summary."""
 import os
 import numpy as np
 import peak_track as PT

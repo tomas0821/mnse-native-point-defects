@@ -5,7 +5,7 @@
 #SBATCH --qos=cpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=64
-#SBATCH --time=36:00:00
+#SBATCH --time=24:00:00
 #SBATCH --output=slurm_%x_%j.out
 module purge; module load intel/2024.2.1 2>/dev/null; module load qe/7.5-cpu
 export OMP_NUM_THREADS=1

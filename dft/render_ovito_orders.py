@@ -4,6 +4,7 @@
 Geometries are the relaxed cells used in the calculations. Mn colour and arrow give the spin. The spins are
 collinear and the calculations have no spin-orbit coupling, so the arrow direction relative to the lattice is
 schematic: arrows are drawn along the page's vertical for readability, along c in wurtzite and [111] in rock salt.
+Each panel carries axes: a1, a2, c for wurtzite; [111] and [-1-12] for rock salt.
 
 usage: ~/.venvs/ovito/bin/python dft/render_ovito_orders.py [--preview] [scene ...]
 scenes: wz_Atype wz_AFMsa wz_AFMsb rs_AFMII. Writes figures/ovito/<scene>.png
@@ -17,7 +18,8 @@ import numpy as np
 from ovito.data import DataCollection, Particles, ParticleType, SimulationCell
 from ovito.modifiers import CreateBondsModifier
 from ovito.pipeline import Pipeline, StaticSource
-from ovito.vis import BondsVis, TachyonRenderer, VectorVis, Viewport
+from ovito.qt_compat import QtCore
+from ovito.vis import BondsVis, CoordinateTripodOverlay, TachyonRenderer, VectorVis, Viewport
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "figures", "ovito")
@@ -74,6 +76,33 @@ def rocksalt():
     return np.array(pos), el, spin, cell
 
 
+def tripod(name):
+    """Axes in neutral ink, so they cannot be read as spin colours. Wurtzite: the lattice vectors a1, a2, c.
+    Rock salt: [111], the stacking direction of the ferromagnetic sheets (vertical here), and [-1-12] across the page."""
+    ink = (0.16, 0.17, 0.19)
+    t = CoordinateTripodOverlay(size=0.10, line_width=0.06, font_size=0.42, style=CoordinateTripodOverlay.Style.Flat,
+                                alignment=QtCore.Qt.AlignmentFlag.AlignLeft | QtCore.Qt.AlignmentFlag.AlignBottom,
+                                offset_x=0.0 if name.startswith("wz") else 0.05,
+                                offset_y=0.16 if name.startswith("wz") else 0.05)
+    if name.startswith("wz"):
+        axes = [((1, 0, 0), "a<sub>1</sub>"), ((-0.5, 0.8660254, 0), "a<sub>2</sub>"), ((0, 0, 1), "c"), None]
+    else:
+        # Only the two directions that lie in the page: [111] up, [-1-12] across. The cubic axes all project obliquely
+        # in this view and two of them overlap.
+        ob = "<span style='text-decoration: overline'>1</span>"
+        axes = [((1 / 3 ** 0.5,) * 3, "[111]"), ((-1 / 6 ** 0.5, -1 / 6 ** 0.5, 2 / 6 ** 0.5), f"[{ob}&#8202;{ob}&#8202;2]"), None, None]
+    for i, ax in enumerate(axes, start=1):
+        if ax is None:
+            setattr(t, f"axis{i}_enabled", False)
+            continue
+        d, lab = ax
+        setattr(t, f"axis{i}_enabled", True)
+        setattr(t, f"axis{i}_dir", d)
+        setattr(t, f"axis{i}_label", lab)
+        setattr(t, f"axis{i}_color", ink)
+    return t
+
+
 def scene(name, preview):
     if name.startswith("wz"):
         order = name.split("_")[1]
@@ -124,6 +153,8 @@ def scene(name, preview):
     vp = Viewport(type=Viewport.Type.Ortho, camera_dir=view, camera_up=up)
     size = (900, 760) if preview else (2600, 2200)
     vp.zoom_all(size)
+    vp.fov *= 1.06                       # a little room in the corner for the axes
+    vp.overlays.append(tripod(name))
     r = TachyonRenderer(ambient_occlusion=True, ambient_occlusion_brightness=0.75, direct_light_intensity=0.85,
                         shadows=True, antialiasing_samples=4 if preview else 24)
     f = os.path.join(OUT, name + ".png")

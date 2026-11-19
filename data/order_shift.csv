@@ -1,4 +1,4 @@
-defect,E_f(stripe)-E_f(A-type) eV,M A-type,M stripe,note
-V_Mn,+0.240,-5.39,-3.05,"unrelaxed, 64-atom 4x2x2, 70/560 Ry, each order on its own host"
-V_Se,+0.006,0.00,0.00,same
-Se_Mn,-0.053,-5.02,-3.01,same
+defect,dEf_unrelaxed_eV,dEf_relaxed_eV,M_Atype_unrelaxed,M_stripe_unrelaxed,M_Atype_relaxed,M_stripe_relaxed,note
+V_Mn,+0.240,+0.261,-5.39,-3.05,-5.27,-3.06,"E_f(stripe AFMs-alpha) - E_f(A-type), fixed dmu_Se, each order on its own host; 64-atom 4x2x2 cell at the A-type lattice, 70/560 Ry, 2x4x3 k"
+V_Se,+0.006,,0.00,0.00,,,"not relaxed"
+Se_Mn,-0.053,-0.008,-5.02,-3.01,-5.00,-5.00,"A-type relaxed at fixed M = -5"

@@ -7,15 +7,21 @@ polymorphs: rock-salt α-MnSe (type-II antiferromagnet) and wurtzite w-MnSe.
 **On the magnetic order of w-MnSe.** The defect cells use the A-type order, for which an altermagnetic
 spin splitting is predicted. It is not the lowest collinear order in DFT: a spin-degenerate stripe order
 (Mavani et al., Phys. Rev. Materials 10, 064408 (2026)) lies 14.3 meV per formula unit below it at these
-settings (`dft/stripe/`), and the formation energies shift between the two orders by up to 0.24 eV
-(`data/order_shift.csv`). The magnetic order of w-MnSe has not been measured.
+settings (`dft/stripe/`). With the defects relaxed in both orders, the formation energies of V<sub>Mn</sub> and
+Se<sub>Mn</sub> shift by +0.26 and -0.01 eV (`data/order_shift.csv`; a spin-state check of the stripe-order
+V<sub>Mn</sub> is in progress). Magnetometry shows w-MnSe is antiferromagnetic below 62 K (Grzybowski et al.,
+arXiv:2611.09509), but the type of order has not been determined.
 
 **Authors:** Tomás Rojas Solorzano (CICIMA and Sede de Occidente, Universidad de Costa Rica;
 tomas.rojas_s@ucr.ac.cr) and Dale Igram (University of Michigan–Dearborn).
 
-> **Status: work in progress.** This repository accompanies a manuscript in preparation. The
-> numbers here are the current results and may still change. Please contact the authors before
-> using or citing them. No license has been granted yet (all rights reserved).
+**Paper:** T. Rojas Solorzano and D. Igram, *Native point defects in rock-salt and wurtzite MnSe: formation
+energies across the growth window and spin splitting in the A-type order*, arXiv:2611.08986
+(https://arxiv.org/abs/2611.08986). This repository is the data deposit for the version submitted to
+Physica B: Condensed Matter; tagged releases correspond to manuscript versions.
+
+> **License:** none granted yet (all rights reserved). Please contact the authors before reusing the data
+> or scripts.
 
 ## What is in here
 
@@ -24,7 +30,7 @@ tomas.rojas_s@ucr.ac.cr) and Dale Igram (University of Michigan–Dearborn).
 | `data/total_energies.csv` | The raw total energies (Ry, 120 Ry cutoff) behind every formation energy, with the output file each one comes from |
 | `data/formation_energies.csv` | Formation energies (eV) of the four defects in both polymorphs at four chemical-potential limits |
 | `data/local_structure.csv` | First-shell relaxation, largest displacement, and Mn site-moment changes per defect |
-| `data/order_shift.csv` | Change of the formation energies between the A-type and stripe orders |
+| `data/order_shift.csv` | Change of the formation energies between the A-type and stripe orders, unrelaxed and relaxed |
 | `data/structures/` | Relaxed defect supercells (extended XYZ, Å) with per-site magnetic moments |
 | `data/tab_*.tex` | The same tables as LaTeX, including the unfolded spin splitting (`tab_stage5.tex`) |
 | `dft/` | Quantum ESPRESSO inputs (and selected outputs) for every stage, plus the scripts that build the cells and analyse the results |
@@ -41,9 +47,9 @@ Inside `dft/`:
 | `bands/` | Bulk relaxations and the w-MnSe band structure along L₁–Γ–L₂ |
 | `stage3prep/` | Elemental references (trigonal Se, Mn) and supercell preparation |
 | `defects/`, `prod/`, `anti/` | Defect supercells: initial inputs, production relax (70 Ry) and single-point (120 Ry) inputs, and the constrained-moment scans for Mn<sub>Se</sub> |
-| `stage5/` | Spin splitting in supercells: band unfolding scripts, the folding test, spectral weights and bands of the pristine and defect cells, peak tracking |
-| `stripe/` | A-type, stripe and ferromagnetic orders of w-MnSe in a doubled cell, and defects in both orders (64-atom cell, fixed geometry) |
-| `spinscan/` | Constrained-magnetization scans at the relaxed defect geometries |
+| `stage5/` | Spin splitting in supercells: band unfolding scripts, spectral weights and bands of the pristine and defect cells, peak tracking, the comparison of estimators (`estimator_compare.py`). The wavefunctions were deleted after analysis; `RECREATE_WAVEFUNCTIONS.md` gives the exact steps, cost and checks to regenerate them |
+| `stripe/` | A-type, stripe and ferromagnetic orders of w-MnSe in a doubled cell; defects in both orders in a 64-atom cell, unrelaxed (`sd_*`), relaxed in legs (`sr_*_L*`, `run_relax.sh`, `order_shift_relaxed.py`) and spin-state checks (`sm_*`) |
+| `spinscan/` | Constrained-magnetization scans at the relaxed defect geometries, and the off-center relaxation of rock-salt Se<sub>Mn</sub> |
 | `prod_relaxedu/` | 72-atom wurtzite host at the relaxed internal parameter, the reference for the formation energies |
 | `analysis/` | Per-site positions and moments of every defect cell, and the local-structure analysis |
 

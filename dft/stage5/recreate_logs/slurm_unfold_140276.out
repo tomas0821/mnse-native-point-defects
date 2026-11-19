@@ -1,0 +1,14 @@
+Lmod Warning:
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded:
+glibc/2.28-oneapi-2024.2.1-vii4u74 (required by:
+gcc-runtime/12.2.0-gcc-12.2.0-ssxrz6f)
+-------------------------------------------------------------------------------
+
+
+
+numpy 2.1.1
+start Tue Nov  3 10:48:33 CST 2026
+wrote w_pristine.npz: nk=41 nbnd=590 M=(3, 3, 2) sum_w(up,k1)=33.000 sum_w(dn,k1)=33.000
+[ok] w_pristine.npz
+UNFOLD DONE Tue Nov  3 10:49:03 CST 2026
