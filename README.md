@@ -20,8 +20,9 @@ energies across the growth window and spin splitting in the A-type order*, arXiv
 (https://arxiv.org/abs/2611.08986). This repository is the data deposit for the version submitted to
 Physica B: Condensed Matter; tagged releases correspond to manuscript versions.
 
-> **License:** none granted yet (all rights reserved). Please contact the authors before reusing the data
-> or scripts.
+> **License:** the data, calculation inputs and outputs, and figures are released under
+> [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (`LICENSE`); the scripts (`*.py`, `*.sh`) under the
+> MIT License (`LICENSE-CODE`). If you use them, please cite the paper and this repository.
 
 ## What is in here
 
@@ -47,13 +48,13 @@ Inside `dft/`:
 | `wzord/`, `sym/` | Wurtzite magnetic orders; symmetry checks of the spin splitting (α-MnSe null control, k-circle) |
 | `bands/` | Bulk relaxations and the w-MnSe band structure along L₁–Γ–L₂ |
 | `stage3prep/` | Elemental references (trigonal Se, Mn) and supercell preparation |
-| `defects/`, `prod/`, `anti/` | Defect supercells: initial inputs, production relax (70 Ry) and single-point (120 Ry) inputs, and the constrained-moment scans for Mn<sub>Se</sub> |
+| `defects/`, `prod/`, `anti/` | Defect supercells: initial inputs, production relaxations (70 Ry) and single points (120 Ry), inputs and outputs, and the constrained-moment scans for Mn<sub>Se</sub> (`anti/`, `prod/wzscan/`) |
 | `stage5/` | Spin splitting in supercells: band unfolding scripts, spectral weights and bands of the pristine and defect cells, peak tracking, the comparison of estimators (`estimator_compare.py`). The wavefunctions were deleted after analysis; `RECREATE_WAVEFUNCTIONS.md` gives the exact steps, cost and checks to regenerate them |
 | `stripe/` | A-type, stripe and ferromagnetic orders of w-MnSe in a doubled cell; defects in both orders in a 64-atom cell, unrelaxed (`sd_*`), relaxed in legs (`sr_*_L*`, `run_relax.sh`, `order_shift_relaxed.py`) and spin-state checks (`sm_*`) |
 | `spinscan/` | Constrained-magnetization scans at the relaxed defect geometries, and the off-center relaxation of rock-salt Se<sub>Mn</sub> |
 | `unrelaxed/` | Single points of the 72-atom wurtzite V<sub>Se</sub> and Se<sub>Mn</sub> cells at ideal sites, the start of their relaxations |
 | `prod_relaxedu/` | 72-atom wurtzite host at the relaxed internal parameter, the reference for the formation energies |
-| `analysis/` | Per-site positions and moments of every defect cell, the local-structure analysis, and the relaxation energies (`relax_gains.py`; it reads the 70 Ry relaxation logs, which are summarized in `data/relaxation_energies.csv`) |
+| `analysis/` | Per-site positions and moments of every defect cell, the local-structure analysis, and the relaxation energies (`relax_gains.py`, which writes `data/relaxation_energies.csv`) |
 
 ## Calculation settings (summary)
 
@@ -73,6 +74,7 @@ cd dft
 python3 formation_energies.py        # all 16 formation energies from the raw totals
 python3 make_formation_table.py      # LaTeX table + lowest-energy defect vs chemical potential
 python3 export_data.py               # regenerates everything in data/
+python3 analysis/relax_gains.py ../data/relaxation_energies.csv   # relaxation energies, ideal-site differences
 cd analysis && python3 local_analysis.py
 ```
 
