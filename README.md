@@ -15,8 +15,8 @@ arXiv:2611.09509), but the type of order has not been determined.
 **Authors:** Tomás Rojas Solorzano (CICIMA and Sede de Occidente, Universidad de Costa Rica;
 tomas.rojas_s@ucr.ac.cr) and Dale Igram (University of Michigan–Dearborn).
 
-**Paper:** T. Rojas Solorzano and D. Igram, *Native point defects in rock-salt and wurtzite MnSe: formation
-energies across the growth window and spin splitting in the A-type order*, arXiv:2611.08986
+**Paper:** T. Rojas Solorzano and D. Igram, *Native vacancies and antisites in rock-salt and wurtzite MnSe:
+formation energies across the growth window and spin splitting in the A-type order*, arXiv:2611.08986
 (https://arxiv.org/abs/2611.08986). This repository is the data deposit for the version submitted to
 Physica B: Condensed Matter; tagged releases correspond to manuscript versions.
 
