@@ -20,9 +20,13 @@ formation energies across the growth window and spin splitting in the A-type ord
 (https://arxiv.org/abs/2611.08986). This repository is the data deposit for the version submitted to
 Physica B: Condensed Matter; tagged releases correspond to manuscript versions.
 
+**Data DOI:** v1.0 (submitted version) is archived at Zenodo,
+[10.5281/zenodo.24406790](https://doi.org/10.5281/zenodo.24406790); all versions:
+[10.5281/zenodo.24406789](https://doi.org/10.5281/zenodo.24406789).
+
 > **License:** the data, calculation inputs and outputs, and figures are released under
 > [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (`LICENSE`); the scripts (`*.py`, `*.sh`) under the
-> MIT License (`LICENSE-CODE`). If you use them, please cite the paper and this repository.
+> MIT License (`LICENSE-CODE`). If you use them, please cite the paper and the data DOI.
 
 ## What is in here
 
