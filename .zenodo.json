@@ -1,0 +1,34 @@
+{
+  "title": "Native vacancies and antisites in rock-salt and wurtzite MnSe: calculation inputs, outputs and analysis scripts",
+  "upload_type": "dataset",
+  "description": "<p>Calculation inputs and outputs (Quantum ESPRESSO, DFT+U), formation-energy and spin-splitting data, relaxed structures and analysis scripts for a first-principles study of the neutral native vacancies and antisites (V_Mn, V_Se, Se_Mn, Mn_Se) in rock-salt alpha-MnSe and wurtzite w-MnSe, including the A-type and stripe magnetic orders of w-MnSe. This version corresponds to the manuscript submitted to Physica B: Condensed Matter. Data, inputs, outputs and figures are released under CC BY 4.0; the scripts under the MIT License (LICENSE-CODE in the repository).</p>",
+  "creators": [
+    {
+      "name": "Rojas Solorzano, Tomás",
+      "affiliation": "Universidad de Costa Rica",
+      "orcid": "0000-0001-5745-4255"
+    },
+    {
+      "name": "Igram, Dale",
+      "affiliation": "University of Michigan-Dearborn",
+      "orcid": "0000-0003-4450-1483"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "MnSe",
+    "native point defects",
+    "formation energy",
+    "DFT+U",
+    "altermagnetism",
+    "Quantum ESPRESSO"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "arXiv:2611.08986",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    }
+  ],
+  "access_right": "open"
+}
