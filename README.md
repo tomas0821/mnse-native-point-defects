@@ -17,8 +17,8 @@ tomas.rojas_s@ucr.ac.cr) and Dale Igram (University of Michigan–Dearborn).
 
 **Paper:** T. Rojas Solorzano and D. Igram, *Native vacancies and antisites in rock-salt and wurtzite MnSe:
 formation energies across the growth window and spin splitting in the A-type order*, arXiv:2611.08986
-(https://arxiv.org/abs/2611.08986). This repository is the data deposit for the version submitted to
-Physica B: Condensed Matter; tagged releases correspond to manuscript versions.
+(https://arxiv.org/abs/2611.08986). This repository is the data deposit for the paper; tagged releases
+correspond to manuscript versions.
 
 **Data DOI:** v1.0 (submitted version) is archived at Zenodo,
 [10.5281/zenodo.24406790](https://doi.org/10.5281/zenodo.24406790); all versions:

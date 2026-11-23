@@ -1,7 +1,7 @@
 {
   "title": "Native vacancies and antisites in rock-salt and wurtzite MnSe: calculation inputs, outputs and analysis scripts",
   "upload_type": "dataset",
-  "description": "<p>Calculation inputs and outputs (Quantum ESPRESSO, DFT+U), formation-energy and spin-splitting data, relaxed structures and analysis scripts for a first-principles study of the neutral native vacancies and antisites (V_Mn, V_Se, Se_Mn, Mn_Se) in rock-salt alpha-MnSe and wurtzite w-MnSe, including the A-type and stripe magnetic orders of w-MnSe. This version corresponds to the manuscript submitted to Physica B: Condensed Matter. Data, inputs, outputs and figures are released under CC BY 4.0; the scripts under the MIT License (LICENSE-CODE in the repository).</p>",
+  "description": "<p>Calculation inputs and outputs (Quantum ESPRESSO, DFT+U), formation-energy and spin-splitting data, relaxed structures and analysis scripts for a first-principles study of the neutral native vacancies and antisites (V_Mn, V_Se, Se_Mn, Mn_Se) in rock-salt alpha-MnSe and wurtzite w-MnSe, including the A-type and stripe magnetic orders of w-MnSe. This version corresponds to the manuscript submitted for publication. Data, inputs, outputs and figures are released under CC BY 4.0; the scripts under the MIT License (LICENSE-CODE in the repository).</p>",
   "creators": [
     {
       "name": "Rojas Solorzano, Tomás",
